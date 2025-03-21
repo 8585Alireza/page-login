@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <link rel="stylesheet" href="style.css">
+    <title>صفحه لاگین</title>
+</head>
+<body>
+  <div class="section">
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+    <div class="box">
+      <h1 class="text1">صفحه ورود</h1>
+      
+      <div class="username">
+        <h5 class="text2">نام کاربری</h5>
+        <input type="text" class="box-username" id="textuser" placeholder="نام کاربری را وارد کنید">
+      </div>
+
+      <div class="password">
+        <h5 class="text2">رمز عبور</h5>
+        <input type="password" class="boxpassword" id="password" placeholder="رمز عبور را وارد کنید">
+        <span id="iconPassword" class="eye-icon">
+          <!-- آیکون چشم -->
+        </span>
+      </div>
+
+      <div class="password">
+        <h5 class="text5">تکرار رمز عبور</h5>
+        <input type="password" class="boxpassword" id="confirmPassword" placeholder="تکرار رمز عبور را وارد کنید">
+        <span id="iconConfirmPassword" class="eye-icon">
+          <!-- آیکون چشم -->
+        </span>
+      </div>
+      <button type="button" onclick="validatePassword()">ورود کنید</button>
+    </div>
+  </div>  
+</body>
+</html>

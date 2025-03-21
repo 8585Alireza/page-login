@@ -1,0 +1,819 @@
+@font-face{
+    font-family: "picoopic-Bold.ttf";
+    src: url(font/picoopic-Bold.ttf), format(truetype) ;
+}
+@font-face{
+    font-family: "picoopic-Light.ttf";
+    src: url(font/picoopic-Light.ttf), format(truetype) ;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    font-family: "picoopic-Light";
+}
+
+.section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+@media (min-width:1442px) and (max-width:2561px) {
+    
+    .box{
+        position: absolute;
+        width: 320px;
+        background-color: #ffffff21;
+        border:1px solid #ffffff3d;
+        border-radius: 10px;
+        padding: 20px;
+        backdrop-filter: blur(5px);
+    }
+    
+    .text1{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff;
+        margin: -4px 65px;
+    }   
+    
+    .text2{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff; 
+        padding: 10px 0;             
+    }   
+    
+    .text5{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff;   
+        padding: 10px 0;        
+    }   
+    
+    .box-username{
+        width: 278px;
+        height: 45px;
+        padding: 10px;
+        padding-right: 40px;
+        border-radius: 5px; 
+        border: none;
+        background-color: #ffffff14;
+    }
+    
+    .boxpassword{
+        width: 278px;
+        height: 45px;
+        padding: 10px;
+        padding-right: 40px;
+        border-radius: 5px; 
+        background-color: #ffffff14;
+        border: none;
+    }
+    
+    .eye-icon {
+        position: absolute;
+        margin-top: 37px;
+        right: 260px;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        color: #ffffff;    
+    }           
+    
+    
+    button{
+        width: 278px;
+        height: 45px;
+        margin-top: 20px;
+        border-radius: 5px; 
+        font-family: "picoopic-Bold.ttf";
+        border: none;
+    }
+    
+    button:active{      
+        background-color: #38ae15;
+        cursor: progress;
+    }
+    
+    .text3{
+        font-family: "picoopic-Light.ttf" ;
+        color: #000000;
+        margin: 0 102px;     
+        padding: 10px 0;       
+    } 
+    
+    ::placeholder{
+        font-family:  "picoopic-Bold.ttf";
+        font-size: 13px;
+    }
+    
+    input{
+        color: #ffffff6c;
+    }
+    
+    .circle{
+        height: 130px;
+        width: 130px;
+        border-radius: 100%;
+    }
+    
+    #circle1{
+        left: 550px;
+        top: 90px;
+        position: absolute;
+        background: linear-gradient(120deg, rgba(26,33,153,1) 0%, rgba(25,127,194,1) 100%);
+    }
+    #circle2{
+        right: 550px;
+        bottom: 90px;
+        position: absolute;
+        background: linear-gradient(90deg, rgba(235,189,21,1) 0%, rgba(255,129,2,1) 100%);
+    }
+    
+    }
+
+@media (min-width:1026px) and (max-width:1441px) {
+    
+    .box{
+        position: absolute;
+        width: 320px;
+        background-color: #ffffff21;
+        border:1px solid #ffffff3d;
+        border-radius: 10px;
+        padding: 20px;
+        backdrop-filter: blur(5px);
+    }
+    
+    .text1{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff;
+        margin: -4px 65px;
+    }   
+    
+    .text2{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff; 
+        padding: 10px 0;             
+    }   
+    
+    .text5{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff;   
+        padding: 10px 0;        
+    }   
+    
+    .box-username{
+        width: 278px;
+        height: 45px;
+        padding: 10px;
+        padding-right: 40px;
+        border-radius: 5px; 
+        border: none;
+        background-color: #ffffff14;
+    }
+    
+    .boxpassword{
+        width: 278px;
+        height: 45px;
+        padding: 10px;
+        padding-right: 40px;
+        border-radius: 5px; 
+        background-color: #ffffff14;
+        border: none;
+    }
+    
+    .eye-icon {
+        position: absolute;
+        margin-top: 37px;
+        right: 260px;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        color: #ffffff;    
+    }           
+    
+    
+    button{
+        width: 278px;
+        height: 45px;
+        margin-top: 20px;
+        border-radius: 5px; 
+        font-family: "picoopic-Bold.ttf";
+        border: none;
+    }
+    
+    button:active{      
+        background-color: #38ae15;
+        cursor: progress;
+    }
+    
+    .text3{
+        font-family: "picoopic-Light.ttf" ;
+        color: #000000;
+        margin: 0 102px;     
+        padding: 10px 0;       
+    } 
+    
+    ::placeholder{
+        font-family:  "picoopic-Bold.ttf";
+        font-size: 13px;
+    }
+    
+    input{
+        color: #ffffff6c;
+    }
+    
+    .circle{
+        height: 130px;
+        width: 130px;
+        border-radius: 100%;
+    }
+    
+    #circle1{
+        left: 613px;
+        top: 153px;
+        position: absolute;
+        background: linear-gradient(120deg, rgba(26,33,153,1) 0%, rgba(25,127,194,1) 100%);
+    }
+    #circle2{
+        right: 613px;
+        bottom: 153px;
+        position: absolute;
+        background: linear-gradient(90deg, rgba(235,189,21,1) 0%, rgba(255,129,2,1) 100%);
+    }
+    
+    }
+
+@media (min-width:770px) and (max-width:1025px) {
+    
+        .box{
+            position: absolute;
+            width: 320px;
+            background-color: #ffffff21;
+            border:1px solid #ffffff3d;
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .text1{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff;
+            margin: -4px 65px;
+        }   
+        
+        .text2{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff; 
+            padding: 10px 0;             
+        }   
+        
+        .text5{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff;   
+            padding: 10px 0;        
+        }   
+        
+        .box-username{
+            width: 278px;
+            height: 45px;
+            padding: 10px;
+            padding-right: 40px;
+            border-radius: 5px; 
+            border: none;
+            background-color: #ffffff14;
+        }
+        
+        .boxpassword{
+            width: 278px;
+            height: 45px;
+            padding: 10px;
+            padding-right: 40px;
+            border-radius: 5px; 
+            background-color: #ffffff14;
+            border: none;
+        }
+        
+        .eye-icon {
+            position: absolute;
+            margin-top: 37px;
+            right: 260px;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            color: #ffffff;    
+        }           
+        
+        
+        button{
+            width: 278px;
+            height: 45px;
+            margin-top: 20px;
+            border-radius: 5px; 
+            font-family: "picoopic-Bold.ttf";
+            border: none;
+        }
+        
+        button:active{      
+            background-color: #38ae15;
+            cursor: progress;
+        }
+        
+        .text3{
+            font-family: "picoopic-Light.ttf" ;
+            color: #000000;
+            margin: 0 102px;     
+            padding: 10px 0;       
+        } 
+        
+        ::placeholder{
+            font-family:  "picoopic-Bold.ttf";
+            font-size: 13px;
+        }
+        
+        input{
+            color: #ffffff6c;
+        }
+        
+        .circle{
+            height: 130px;
+            width: 130px;
+            border-radius: 100%;
+        }
+        
+        #circle1{
+            left: 613px;
+            top: 153px;
+            position: absolute;
+            background: linear-gradient(120deg, rgba(26,33,153,1) 0%, rgba(25,127,194,1) 100%);
+        }
+        #circle2{
+            right: 613px;
+            bottom: 153px;
+            position: absolute;
+            background: linear-gradient(90deg, rgba(235,189,21,1) 0%, rgba(255,129,2,1) 100%);
+        }
+        
+    }
+    
+@media (min-width:500px) and (max-width:769px) {
+        
+        .box{
+            position: absolute;
+            width: 420px;
+            background-color: #ffffff21;
+            border:1px solid #ffffff3d;
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .text1{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff;
+            margin: -4px 115px;
+        }   
+        
+        .text2{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff; 
+            padding: 10px 0;             
+        }   
+        
+        .text5{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff;   
+            padding: 10px 0;        
+        }   
+        
+        .box-username{
+            width: 378px;
+            height: 45px;
+            padding: 5px;
+            padding-right: 5px;
+            border-radius: 5px; 
+            border: none;
+            background-color: #ffffff14;
+        }
+        
+        .boxpassword{
+            width: 378px;
+            height: 45px;
+            padding: 5px;
+            padding-right: 5px;
+            border-radius: 5px; 
+            background-color: #ffffff14;
+            border: none;
+        }
+        
+        .eye-icon {
+            position: absolute;
+            margin-top: 37px;
+            right: 260px;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            color: #ffffff;    
+        }           
+        
+        
+        button{
+            width: 378px;
+            height: 45px;
+            margin-top: 20px;
+            border-radius: 5px; 
+            font-family: "picoopic-Bold.ttf";
+            border: none;
+        }
+        
+        button:active{      
+            background-color: #38ae15;
+            cursor: progress;
+        }
+        
+        .text3{
+            font-family: "picoopic-Light.ttf" ;
+            color: #000000;
+            margin: 0 102px;     
+            padding: 10px 0;       
+        } 
+        
+        ::placeholder{
+            font-family:  "picoopic-Bold.ttf";
+            font-size: 13px;
+        }
+        
+        input{
+            color: #ffffff6c;
+        }
+        
+        .circle{
+            height: 130px;
+            width: 130px;
+            border-radius: 100%;
+        }
+        
+        #circle1{
+            align-items: center;
+            left: 130px;
+            top: 40px;
+            position: absolute;
+            background: linear-gradient(120deg, rgba(26,33,153,1) 0%, rgba(25,127,194,1) 100%);
+        }
+        #circle2{
+            align-items: center;
+            right: 130px;
+            bottom: 40px;;
+            position: absolute;
+            background: linear-gradient(90deg, rgba(235,189,21,1) 0%, rgba(255,129,2,1) 100%);
+        }
+        
+    }
+
+@media (min-width:399px) and (max-width:426px) {
+    
+
+        .box{
+            position: absolute;
+            width: 360px;
+            background-color: #ffffff21;
+            border:1px solid #ffffff3d;
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .text1{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff;
+            margin: -4px 85px;
+        }   
+        
+        .text2{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff; 
+            padding: 10px 0;             
+        }   
+        
+        .text5{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff;   
+            padding: 10px 0;        
+        }   
+        
+        .box-username{
+            width: 318px;
+            height: 45px;
+            padding: 5px;
+            padding-right: 5px;
+            border-radius: 5px; 
+            border: none;
+            background-color: #ffffff14;
+        }
+        
+        .boxpassword{
+            width: 318px;
+            height: 45px;
+            padding: 5px;
+            padding-right: 5px;
+            border-radius: 5px; 
+            background-color: #ffffff14;
+            border: none;
+        }
+        
+        .eye-icon {
+            position: absolute;
+            margin-top: 37px;
+            right: 260px;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            color: #ffffff;    
+        }           
+        
+        
+        button{
+            width: 318px;
+            height: 45px;
+            margin-top: 20px;
+            border-radius: 5px; 
+            font-family: "picoopic-Bold.ttf";
+            border: none;
+        }
+        
+        button:active{      
+            background-color: #38ae15;
+            cursor: progress;
+        }
+        
+        .text3{
+            font-family: "picoopic-Light.ttf" ;
+            color: #000000;
+            margin: 0 102px;     
+            padding: 10px 0;       
+        } 
+        
+        ::placeholder{
+            font-family:  "picoopic-Bold.ttf";
+            font-size: 13px;
+        }
+        
+        input{
+            color: #ffffff6c;
+        }
+        
+        .circle{
+            height: 130px;
+            width: 130px;
+            border-radius: 100%;
+        }
+        
+        #circle1{
+            align-items: center;
+            left: 6px;
+            top: 30px;
+            position: absolute;
+            background: linear-gradient(120deg, rgba(26,33,153,1) 0%, rgba(25,127,194,1) 100%);
+        }
+        #circle2{
+            align-items: center;
+            right: 6px;
+            bottom: 30px;
+            position: absolute;
+            background: linear-gradient(90deg, rgba(235,189,21,1) 0%, rgba(255,129,2,1) 100%);
+        }
+        
+    }
+    
+@media (min-width:321px) and (max-width:376px) {
+        
+    
+        .box{
+            position: absolute;
+            width: 310px;
+            background-color: #ffffff21;
+            border:1px solid #ffffff3d;
+            border-radius: 10px;
+            padding: 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .text1{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff;
+            margin: -4px 70px;
+        }   
+        
+        .text2{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff; 
+            padding: 10px 0;             
+        }   
+        
+        .text5{
+            font-family: "picoopic-Light.ttf" ;
+            color: #fff;   
+            padding: 10px 0;        
+        }   
+        
+        .box-username{
+            width: 288px;
+            height: 45px;
+            padding: 5px;
+            padding-right: 5px;
+            border-radius: 5px; 
+            border: none;
+            background-color: #ffffff14;
+        }
+        
+        .boxpassword{
+            width: 288px;
+            height: 45px;
+            padding: 5px;
+            padding-right: 5px;
+            border-radius: 5px; 
+            background-color: #ffffff14;
+            border: none;
+        }
+        
+        .eye-icon {
+            position: absolute;
+            margin-top: 37px;
+            right: 260px;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            color: #ffffff;    
+        }           
+        
+        
+        button{
+            width: 288px;
+            height: 45px;
+            margin-top: 20px;
+            border-radius: 5px; 
+            font-family: "picoopic-Bold.ttf";
+            border: none;
+        }
+        
+        button:active{      
+            background-color: #38ae15;
+            cursor: progress;
+        }
+        
+        .text3{
+            font-family: "picoopic-Light.ttf" ;
+            color: #000000;
+            margin: 0 102px;     
+            padding: 10px 0;       
+        } 
+        
+        ::placeholder{
+            font-family:  "picoopic-Bold.ttf";
+            font-size: 13px;
+        }
+        
+        input{
+            color: #ffffff6c;
+        }
+        
+        .circle{
+            height: 130px;
+            width: 130px;
+            border-radius: 100%;
+        }
+        
+        #circle1{
+            align-items: center;
+            left: 5px;
+            top: 40px;
+            position: absolute;
+            background: linear-gradient(120deg, rgba(26,33,153,1) 0%, rgba(25,127,194,1) 100%);
+        }
+        #circle2{
+            align-items: center;
+            right:5px;
+            bottom:40px;
+            position: absolute;
+            background: linear-gradient(90deg, rgba(235,189,21,1) 0%, rgba(255,129,2,1) 100%);
+        }
+        
+    }
+
+@media (min-width:0px) and (max-width:320px) {
+        
+    .box{
+        position: absolute;
+        width: 260px;
+        background-color: #ffffff21;
+        border:1px solid #ffffff3d;
+        border-radius: 10px;
+        padding: 10px;
+        backdrop-filter: blur(5px);
+    }
+    
+    .text1{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff;
+        margin: -4px 45px;
+    }   
+    
+    .text2{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff; 
+            padding: 10px 0;             
+    }   
+    
+    .text5{
+        font-family: "picoopic-Light.ttf" ;
+        color: #fff;   
+        padding: 10px 0;        
+    }   
+    
+    .box-username{
+        width: 238px;
+        height: 45px;
+        padding: 5px;
+        border-radius: 5px; 
+        border: none;
+        background-color: #ffffff14;
+    }
+    
+    .boxpassword{
+        width: 238px;
+        height: 45px;
+        padding: 5px;
+        border-radius: 5px; 
+        background-color: #ffffff14;
+        border: none;
+    }
+    
+    .eye-icon {
+        position: absolute;
+        margin-top: 37px;
+        right: 260px;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        color: #ffffff;    
+    }           
+    
+    
+    button{
+        width: 238px;
+        height: 45px;
+        margin-top: 20px;
+        border-radius: 5px; 
+        font-family: "picoopic-Bold.ttf";
+        border: none;
+    }
+    
+    button:active{      
+        background-color: #38ae15;
+        cursor: progress;
+    }
+    
+    .text3{
+        font-family: "picoopic-Light.ttf" ;
+        color: #000000;
+        margin: 0 102px;     
+        padding: 10px 0;       
+    } 
+    
+    ::placeholder{
+        font-family:  "picoopic-Bold.ttf";
+        font-size: 13px;
+    }
+    
+    input{
+        color: #ffffff6c;
+    }
+    
+    .circle{
+        height: 130px;
+        width: 130px;
+        border-radius: 100%;
+    }
+    
+    #circle1{
+        align-items: center;
+        left: 5px;
+        top: 40px;
+        position: absolute;
+        background: linear-gradient(120deg, rgba(26,33,153,1) 0%, rgba(25,127,194,1) 100%);
+    }
+    #circle2{
+        align-items:center;
+        right: 5px;
+        bottom: 40px;
+        position: absolute;
+        background: linear-gradient(90deg, rgba(235,189,21,1) 0%, rgba(255,129,2,1) 100%);
+    }
+    }
